@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e6fbc6a973.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section class="display">
+            <div id="operands"></div>
+            <div id="answer"></div>
+        </section>
+        <!-- <hr> -->
+        <section class="buttons">
+            <div>
+                <button class="clear-btn" onclick="allclear()">AC</button>
+                <button class="btns" onclick="slice()"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="btns" onclick="disp('/')">/</button>
+            </div>
+
+            <div>
+                <button class="btns" onclick="disp('7')">7</button>
+                <button class="btns" onclick="disp('8')">8</button>
+                <button class="btns" onclick="disp('9')">9</button>
+                <button class="btns" onclick="disp('*')">*</button>
+            </div>
+
+            <div>
+                <button class="btns" onclick="disp('4')">4</button>
+                <button class="btns" onclick="disp('5')">5</button>
+                <button class="btns" onclick="disp('6')">6</button>
+                <button class="btns" onclick="disp('-')">-</button>
+            </div>
+
+            <div>
+                <button class="btns" onclick="disp('1')">1</button>
+                <button class="btns" onclick="disp('2')">2</button>
+                <button class="btns" onclick="disp('3')">3</button>
+                <button class="btns" onclick="disp('+')">+</button>
+            </div>
+
+            <div>
+                <button class="btns" onclick="disp('.')">.</button>
+                <button class="btns" onclick="disp('0')">0</button>
+                <button class="equal-btn" onclick="equal()">=</button>
+            </div>
+            
+        </section>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
